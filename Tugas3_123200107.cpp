@@ -20,6 +20,7 @@ int main()
 		cout << "1. Algoritma dan Pemrograman\n";
 		cout << "2. Kalkulus\n";
 		cout << "Pilih : "; cin >> pil;
+
 		if(pil == 1){
 			cout << "Nilai Harian\t : "; cin >> harian;
 			cout << "Nilai UTS\t : "; cin >> uts;
@@ -38,14 +39,17 @@ int main()
 			cout << "Nilai UAS\t : "; cin >> uas;
 			cout << endl;
 			hasil = (harian + uts + uas)/3;
+
 			if(hasil >= 80){
 				cout << "Anda lulus Kalkulus dengan nilai " << hasil << endl;
 			}else{
 				cout << "Anda tidak lulus Kalkulus dengan nilai " << hasil << endl;
 			}
+
 		}else{
 			cout << "Input anda salah!\n";
 		}
+		
 	}else if(uname == "admin" && pword != 123){
 		cout << "Password anda salah!" << endl;
 	}else if(pword == 123 && uname != "admin"){
