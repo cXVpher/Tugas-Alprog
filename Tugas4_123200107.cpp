@@ -21,8 +21,7 @@ int main()
 			c = b;
 			for(int i = 1; i < a; i++){
 				cout << " + " << b;
-				a1 = c + b;
-				c = a1;
+				c = c + b;
 			}
 			cout << " = " << c << endl;
 			break;
@@ -37,8 +36,7 @@ int main()
 
 			for(int j = 1; j < b; j++){
 				cout << " x " << a;
-				a1 = c * a;
-				c = a1;
+				c = c * a;	
 			}
 			cout << " = " << c << endl;
 			break;
