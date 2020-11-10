@@ -3,6 +3,9 @@ using namespace std;
 
 int main()
 {
+	char b;
+	do{
+		system("cls");
 	int a, n;
 	cout << " =====Gambar Bangun Datar=====" << endl;
 	cout << " 1. Kotak bolong" << endl;
@@ -43,8 +46,10 @@ int main()
 			}
 			break;
 	}
-
-
+	cout << "Apakah anda ingin menggunakannya lagi? (y/n) "; cin >> b;
+	}while(b == 'y');
+	cout << "\n";
+	system("pause");
 	cin.get();
 	return 0;
 }
