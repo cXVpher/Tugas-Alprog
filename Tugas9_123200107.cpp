@@ -45,7 +45,7 @@ int main()
 	for(int m = 0; m < deret - 1; m++){
 		selisih = arr[m] - arr [m+1];
 		if(selisih < 0){
-			selisih * (-1);
+			selisih = selisih * (-1);
 		}
 		if(selisih > max1){
 			max1 = selisih;
